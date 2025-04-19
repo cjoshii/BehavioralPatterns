@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../Command/Command.csproj" />
+    <ProjectReference Include="../Observer/Observer.csproj" />
   </ItemGroup>
 
 </Project>

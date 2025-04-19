@@ -4,3 +4,4 @@
 2. Observer
 3. Strataey
 4. Chian Of Responsibility
+5. Iterator
