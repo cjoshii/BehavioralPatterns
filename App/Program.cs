@@ -2,6 +2,7 @@
 using Observer.Generic;
 using Observer.EH;
 using Observer.INPC;
+using Strategy;
 
 var remote = new Remote();
 
@@ -49,3 +50,13 @@ person.FirstName = "Krupa";
 person.LastName = "Jani";
 person.FirstName = "Reya";
 person.LastName = "Joshi";
+
+var calculator = new Calculator();
+calculator.SetStrategy(new Add());
+Console.WriteLine($"Add 2 and 2 : {calculator.Execute(2, 2)}");
+
+calculator.SetStrategy(new Substract());
+Console.WriteLine($"Substract 2 from 2 : {calculator.Execute(2, 2)}");
+
+calculator.SetStrategy(new Multiply());
+Console.WriteLine($"Multiply 2 into 2 : {calculator.Execute(2, 2)}");
